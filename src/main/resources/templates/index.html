@@ -6,11 +6,45 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title class="font">COMMUNICATION</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>Craig Mason</div>
+         <!-- The Contact Section -->
+  <div  style="width:800px; padding: 10%; margin:0 auto;" id="contact">
+    <h2>COMMUNICATION</h2>
+    <p><i class="font">Use this form for sending emails from the Kiosk</i></p>
+
+        <script>
+            function promptMe(){
+            alert ("Email Sent!");
+        }
+        </script>
+      
+      <div class="w3-col m6">
+        <form>
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div>
+              <input type="text" placeholder="Email Type" required name="Email Type">
+            </div>
+            <div>
+              <input  type="text" placeholder="Line" required name="Line">
+            </div>
+            <div>
+              <input type="text" placeholder="Machine" required name="Machine">
+            </div>
+            <div>
+              <input type="text" placeholder="Email Subject" required name="Email Subject">
+            </div>
+          <input type="text" placeholder="Email Text" required name="Email Text">
+          <button class="button" onclick="promptMe()" type="submit">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     </body>
 </html>
+
